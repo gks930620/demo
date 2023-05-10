@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.domain.posts.Posts;
 import com.example.demo.domain.posts.PostsRepository;
+
 import com.example.demo.web.dto.PostsListResponseDto;
 import com.example.demo.web.dto.PostsResponseDto;
 import com.example.demo.web.dto.PostsSaveRequestDto;
@@ -48,7 +49,6 @@ public class PostsService {
 
         return new PostsResponseDto(entity);
     }
-
     @Transactional(readOnly = true)
     public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
