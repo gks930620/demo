@@ -28,7 +28,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
     //db
-    implementation 'com.h2database:h2:1.4.199'
+    implementation 'com.h2database:h2:1.4.193'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.session:spring-session-jdbc'  //DB를 session 저장소로 사용하기위한.
 

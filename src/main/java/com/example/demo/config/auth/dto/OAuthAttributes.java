@@ -59,7 +59,7 @@ public class OAuthAttributes {
                 .name(name)
                 .email(email)
                 .picture(picture)
-                .role(Role.GUEST)
+                .role(Role.GUEST)    //여기가 기본으로 GUEST로 되어있어서 로그인해도 글 안 써짐..
                 .build();
     }
 }
